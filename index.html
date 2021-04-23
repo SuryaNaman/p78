@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>THE FAMILY BOOK</title>
+</head>
+
+<body>
+    <h1>The Family Book</h1>
+    <img id="img" src="the_family_book.jpg">
+    <h1 id="name">Our Family</h1>
+    <button type="button" onclick="change()">Next</button>
+    <script>
+        var i = ["the_family_book.jpg", "women.jpg", "man.PNG", "brother.png", "me.jpg"];
+        var n = ["Our Family", "My Mom : Vijaya Reddy", "My Dad : Vijay Reddy", "My Brother : Vivan Reddy", "Me : Surya Naman Reddy"];
+        var j = 0;
+
+        function change() {
+            document.getElementById("img").src = i[j];
+            document.getElementById("name").innerHTML = n[j];
+            j++;
+        }
+        console.log(i, n);
+    </script>
+</body>
+
+</html>
